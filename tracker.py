@@ -9,13 +9,10 @@ price_target = 500
 email_from = "send-from@email.com"
 passwd = "password-of-email-from"
 email_to = "send-to@email.com"
+headers = {"User-Agent": "your-user-agent"}
 #####################################
 
-headers = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"}
-
 page = requests.get(url, headers=headers)
-
 soup = BeautifulSoup(page.content, "html.parser")
 
 title = soup.find(id="productTitle").get_text()
