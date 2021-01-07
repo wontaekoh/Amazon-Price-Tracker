@@ -3,4 +3,4 @@ This is Amazon price tracker that check a product's availability and compare its
 Once the conditions are met, it notifies the user by sending an email.
 
 ### Demonstration of email notification
-![](images/demo-email.png =200x)
+<img src="images/demo-email.png" alt="" width="250"/>
